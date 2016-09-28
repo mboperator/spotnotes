@@ -1,32 +1,40 @@
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { Container, Content, Card, CardItem, Text } from 'native-base';
 
 export default class List extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-      </View>
+      <Container style={{ paddingTop: 0, padding: 10 }}>
+        <Content>
+          <Card style={{ marginTop: 10 }}>
+            <CardItem header note="created at date">
+              <Text>First Note</Text>
+            </CardItem>
+            <CardItem>
+              <Text>A description of the note</Text>
+            </CardItem>
+          </Card>
+
+          <Card style={{ marginTop: 10 }}>
+            <CardItem header note="created at date">
+              <Text>Second Note</Text>
+            </CardItem>
+            <CardItem>
+              <Text>A description of the note</Text>
+            </CardItem>
+          </Card>
+
+          <Card style={{ marginTop: 10 }}>
+            <CardItem header note="created at date">
+              <Text>Third Note</Text>
+            </CardItem>
+            <CardItem>
+              <Text>A description of the note</Text>
+            </CardItem>
+          </Card>
+
+        </Content>
+      </Container>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-});
