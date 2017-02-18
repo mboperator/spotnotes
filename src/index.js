@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Content, Header, Title } from 'native-base';
 import List from './views/List';
+import Map from './views/Map';
 
 export default class AppContainer extends Component {
   render() {
@@ -12,7 +13,7 @@ export default class AppContainer extends Component {
           </Title>
         </Header>
         <Content>
-          <List />
+          <Map />
         </Content>
       </Container>
     );
